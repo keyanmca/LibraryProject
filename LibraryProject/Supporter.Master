@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Supporter.master.cs" Inherits="LibraryProject.Supporter" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="Book Store Template, Free CSS Template, CSS Website Layout, CSS, HTML" />
+    <meta name="description" content="Book Store Template, Free CSS Template, Download CSS Website" />
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+ 
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <form id="form1" runat="server">
+    <div id="templatemo_container">
+        <div>
+            <asp:Panel ID="Panel1" runat="server"
+            BackImageUrl="~/images/templatemo_h1_bg.jpg" 
+            style="text-align: right; color: #8C9547; font-weight: 700">
+                <asp:LinkButton ID="lnkbtn_Login" runat="server" PostBackUrl="~/Login.aspx">Login</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </asp:Panel>
+            <asp:Panel ID="Panel2" runat="server" 
+                BackImageUrl="~/images/templatemo_h1_bg.jpg" 
+                style="text-align: right; color: #8C9547; font-weight: 700">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome&nbsp;&nbsp;&nbsp;<asp:LinkButton 
+                    ID="lnkbtnUsername" runat="server" PostBackUrl="~/UserProfile.aspx">Username</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="lnkbtnLogout" runat="server" onclick="lnkbtnLogout_Click">Log Out</asp:LinkButton>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            </asp:Panel>
+
+        </div>
+	
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="DefaultSupporter.aspx" class="current">Home</a></li>
+            <li></li>
+    	    &nbsp;</ul>
+    </div> <!-- end of menu -->
+    
+    <div id="templatemo_header">
+    	<div id="templatemo_special_offers">
+        	</div>
+    </div> <!-- end of header -->
+    
+    <div id="templatemo_content">
+    	
+        <div id="templatemo_content_left">
+        	<div class="templatemo_content_left_section">
+            	<h1>Order Management</h1>
+                <ul>
+                    <li><a href=AcceptOrders.aspx >Accept Orders</a></li>
+                    <li><a href=AcceptReturns.aspx>Accept Returns</a></li>
+                    
+            	</ul>
+            </div>
+			
+            
+        </div> <!-- end of content left -->
+        
+        
+        
+        <div id="templatemo_content_right">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        	
+            <p>
+                <br />
+            </p>
+        	
+            </asp:ContentPlaceHolder>
+        </div> <!-- end of content right -->
+        
+    
+    	<div class="cleaner_with_height">&nbsp;</div>
+    </div> <!-- end of content -->
+    
+    <div id="templatemo_footer">
+    
+	       
+        Copyright © 2024 Library | Designed by Mustafa TOSUN - Mehmet Ahsen OZBEY and Yusuf BAYKAL	</div> 
+    <!-- end of footer -->
+<!--  Free CSS Template www.templatemo.com -->
+</div>
+
+    <div>
+        
+    </div>
+    </form>
+</body>
+</html>
